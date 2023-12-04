@@ -1,0 +1,122 @@
+*{
+  font-family: Arial;
+}
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-contant{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex: 1;
+  margin-left: 20px;
+  color: rgb(7, 78, 7);
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo-des{
+  flex-direction: column;
+  column-gap: 1px;
+
+}
+.descrip{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+button{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 15px 35px;
+  border: none;
+  background-color: rgb(222, 96, 96);
+  border-radius: 30px;
+  color: white;
+  justify-content: center;
+  margin-left: 20%;
+}
+button:hover{
+  cursor: pointer;
+  background-color:  rgb(224, 78, 78);
+}
+
+.touch{
+  text-align: center;
+  color: rgb(14, 107, 81);
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.information{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: fadeIn 1s ease-in;
+  background-color: rgb(14, 107, 81);
+  margin-bottom: 1%;
+  padding: 30px;
+}
+
+.conten{
+  width: 300px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  transition: transform 0.4s ease-in;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.conten:hover{
+  transform: translateY(10px);
+  box-shadow: 0px 0px 10px #202020;
+  border: 1px solid white;
+}
+
+.conten h2{
+  text-align: center;
+  font-family: Arial;
+}
+
+.conten h2:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.icon{
+  text-align: center;
+}
+
+@keyframes fadeIn{
+0%{
+opacity: 0.3;
+transform: translateY(50px);
+transition: 0.5s;
+
+}
+100%{
+opacity: 1;
+transform: translateY(0px);
+transition: o.5s;
+}
+}
+
+@media (max-width:768px) {
+  .information{
+    flex-direction: column;
+    align-items: center;
+  }
+  .conten{
+    margin-bottom: 35px;
+  }
+}
+
+
